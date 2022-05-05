@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Find Buses in Boston</title>
+        <!--Bootstrap-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <!---Mapbox-->
+        <script src='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js'></script>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.css' rel='stylesheet' />
+        <link href= 'styles.css' rel= 'stylesheet'>
+        <!--gFonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Prompt:wght@300&display=swap" rel="stylesheet">
+    </head> 
+   <body>
+   <div class='map-container'>
+    <div id='map'></div>
+</div>
+    
+<div class="map-overlay">
+    <select name="routeMenu" id="routeList" class="dropdown">
+        <option value = "" disabled selected>Search Bus Locations...</option> 
+    </select>
+    <button class="btn" id="searchBtn">Find Bus</button>
+    <div class="busAvail" id="routesNum"></div>
+</div>
+
+
+<div id="menu">
+    <input id="satellite-streets-v11" type="radio" name="rtoggle" value="satellite" checked="checked">
+        <label for="satellite-streets-v11">Satellite</label>
+        <input id="navigation-day-v1" type="radio" name="rtoggle" value="light">
+        <label for="navigation-day-v1">Day</label>
+        <input id="navigation-night-v1" type="radio" name="rtoggle" value="dark">
+        <label for="navigation-night-v1">Night</label>
+        <input id="streets-v11" type="radio" name="rtoggle" value="streets">
+        <label for="streets-v11">Streets</label>
+        <input id="light-v10" type="radio" name="rtoggle" value="outdoors">
+        <label for="olight-v10">Light</label>
+</div>
+
+        <script src = "mapanimation.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+         crossorigin="anonymous"></script>
+        </script>
+   </body> 
+</html>
