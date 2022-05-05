@@ -5,7 +5,7 @@
 This app showcases the live location of MBTA Buses by using the MBTA API. The gps locations, and other information are updated every 15 seconds, then filtered and rendered to the map. Once a bus route is specified, the user can see how many buses there are for the route and view their live location. Toggle between different map layers and find your favorite view. Zoom in/out and rotational toggles have also been added. 
 
 ### How to Run: 
-Click the link to view the live GitHub Deployment or: 
+Click the link to [view the live GitHub Deployment](https://mxleach.github.io/boston-bus-tracker/) or: 
 
 Download the zip folder with the source code file, or fork this repo into your GitHub and clone it into your machine, then run it by using your favorite IDE. 
 
